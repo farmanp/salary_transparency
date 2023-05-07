@@ -1,0 +1,22 @@
+{
+  "name": "Salary Range Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Displays salary range for job postings",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "optional_permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
