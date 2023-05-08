@@ -1,6 +1,6 @@
 function getSalaryRange() {
   console.log("getSalaryRange() function called");
-  const salaryRangeRegex = /\$\d{1,3}(?:,\d{3})?-?\$\d{1,3}(?:,\d{3})?/;
+  const salaryRangeRegex = /\$\d{1,3}(?:,\d{3})?-?\$\d{1,3}(?:,\d{3})?|\$\d{1,3}k\s*-\s*\$\d{1,3}k/;
   const salaryRangeMatch = document.body.innerText.match(salaryRangeRegex);
 
   if (salaryRangeMatch) {

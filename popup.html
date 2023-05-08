@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Salary Range Extension</title>
+    <meta charset="UTF-8">
+    <title>Income IQ</title>
     <script src="popup.js"></script>
+    <style>
+      :root {
+        --color-background: white;
+        --color-primary: #007bff;
+        --color-secondary: #f4f4f4;
+        --color-footer: #f8f8f8;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        height: 200px;
+      }
+      
+      .header {
+        background-color: var(--color-primary);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .body {
+        background-color: var(--color-secondary);
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      
+      .button {
+        background-color: var(--color-primary);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .footer {
+        background-color: var(--color-footer);
+        border-top: 1px solid #d3d3d3;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Salary Range:</h1>
-    <p id="salary-range">Loading...</p>
+    <div class="header">Income IQ</div>
+    <div class="body">
+      <h2>Salary Range</h2>
+      <p id="salary-range">Loading...</p>
+      <h2>Report Listing</h2>
+      <button class="button">
+        <a href="https://cdle.colorado.gov/sites/cdle/files/Equal%20Pay%20Complaint%20Form%20Dec%202020_Distributed.pdf" target="_blank">Report Job Posting</a>
+      </button>      
+    </div>
+    <div class="footer">Footer</div>
   </body>
 </html>
