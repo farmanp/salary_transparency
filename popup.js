@@ -9,12 +9,10 @@ function getSalaryRange() {
         if (response && response.salaryRange) {
           const salaryRange = response.salaryRange;
           const salaryRangeElement = document.getElementById("salary-range");
-          // make text green
           salaryRangeElement.style.color = "green";
           salaryRangeElement.textContent = salaryRange;
         } else {
           const salaryRangeElement = document.getElementById("salary-range");
-          // make text red
           salaryRangeElement.style.color = "red";
           salaryRangeElement.textContent = "Salary range not found";
         }

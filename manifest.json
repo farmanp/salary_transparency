@@ -1,11 +1,12 @@
 {
-  "name": "Salary Range Extension",
+  "name": "Gob",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "Displays salary range for job postings",
+  "description": "Data-driven gob search",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "tabs"
   ],
   "optional_permissions": [
     "storage"
