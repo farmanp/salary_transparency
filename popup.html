@@ -2,70 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Income IQ</title>
+    <title>Gob</title>
     <script src="popup.js"></script>
-    <style>
-      :root {
-        --color-background: white;
-        --color-primary: #007bff;
-        --color-secondary: #f4f4f4;
-        --color-footer: #f8f8f8;
-      }
-      
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        height: 200px;
-      }
-      
-      .header {
-        background-color: var(--color-primary);
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 10px;
-        text-align: center;
-      }
-      
-      .body {
-        background-color: var(--color-secondary);
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-      }
-      
-      .button {
-        background-color: var(--color-primary);
-        border: none;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-        font-size: 16px;
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-      }
-      
-      .footer {
-        background-color: var(--color-footer);
-        border-top: 1px solid #d3d3d3;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="popup.css">
   </head>
   <body>
-    <div class="header">Income IQ</div>
+    <div class="header">Gob</div>
     <div class="body">
       <h2>Salary Range</h2>
       <p id="salary-range">Loading...</p>
       <h2>Report Listing</h2>
-      <button class="button">
-        <a href="https://cdle.colorado.gov/sites/cdle/files/Equal%20Pay%20Complaint%20Form%20Dec%202020_Distributed.pdf" target="_blank">Report Job Posting</a>
-      </button>      
+    
+      <textarea id="report-text" placeholder="Enter your report here..." style="display:none"></textarea>
+      <button id="report-button">Report Job Post</button>
+      <button id="report-cancel" style="display:none">Cancel</button>      
+      <button id="report-submit" style="display:none">Submit</button>      
     </div>
     <div class="footer">Is there an issue? Contact farman.pirz@gmail.com</div>
   </body>
